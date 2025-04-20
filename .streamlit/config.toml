@@ -1,0 +1,7 @@
+[theme]
+base = "light"
+
+[pages]
+"Home" = "🏠 Welcome"
+"Projects" = "📂 Projects"
+"About" = "🙋‍♂️ About"

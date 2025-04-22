@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-st.set_page_config(page_title="writings", page_icon="👤", layout="centered")
+st.set_page_config(page_title="Writings", page_icon="👤", layout="centered")
 lake_og = Image.open("assets/lake.png")
 lake = lake_og.resize((1920,1280))
 

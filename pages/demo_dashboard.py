@@ -9,12 +9,12 @@ st.set_page_config(page_title="Lake's Demo Dashboard", layout="wide")
 st.title("Lake's Demo Dashboard")
 st.markdown("This is a simple interactive dashboard using CSV data.")
 
-# 1️⃣ Upload CSV
+# Upload CSV
 uploaded_file = st.file_uploader("Upload your CSV", type=["csv"])
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
 
-    # 2️⃣ Sidebar: Column Type Inspector
+    # Sidebar: Column Type Inspector
     with st.sidebar:
         st.header("🔧 Adjust Column Types")
         converted_types = {}
@@ -47,7 +47,7 @@ if uploaded_file is not None:
 
         st.success("✅ Column types updated!")
 
-    # 3️⃣ Main Area: DataFrame + Chart
+    # Main Area: DataFrame + Chart
     st.subheader("🔍 Data Preview")
     st.dataframe(df)
 

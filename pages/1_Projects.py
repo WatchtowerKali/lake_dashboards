@@ -1,12 +1,12 @@
 import streamlit as st
 from PIL import Image, ImageOps
 
-st.set_page_config(page_title="Projects", page_icon="📊", layout="wide")
+st.set_page_config(page_title="projects", page_icon="📊", layout="wide")
 
 img1 = Image.open("assets/demo_dashboard_scrn.png")
 demo_img = ImageOps.expand(img1, border=(5, 5, 5, 5), fill="black")
 
-st.title("📊 My Projects")
+st.title("Projects")
 st.write("Here's a list of the dashboards, tools, and data stories I’ve created.")
 
 st.header("Current Projects")

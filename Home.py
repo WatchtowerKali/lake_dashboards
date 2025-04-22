@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-st.set_page_config(page_title="Home", page_icon="🏠", layout="centered")
+st.set_page_config(page_title="home", page_icon="🏠", layout="centered")
 # Sidebar content
 #st.sidebar.title("📂 Navigation")
 #st.sidebar.markdown("Use the sidebar to navigate through the site.")
@@ -15,12 +15,13 @@ me1 = Image.open("assets/me.jpg")
 me = me1.resize((400,400))
 
 # Step 1: Title Section
-st.title("Lake House Portfolio")
+st.title(":blue[The Lake House]")
 
 # Step 2: Introduction Section
 st.header("Hello there!")
+#st.header("I'm Lake")
 st.write("""
-    I'm Lake, a data enthusiast and aspiring psychologist.
+    I'm Lake, a data solutions enthusiast and aspiring psychologist.
 """)
 st.image(me, caption="that's me!")
 st.write("""
